@@ -11,8 +11,7 @@ phases:
       - npm install
   build:
     commands:
-      - ng build --prod
-      - echo "Build completed."
+      - ng test --no-watch --no-progress --browsers=ChromeHeadlessCI
 
 artifacts:
   base-directory: dist/my-angular-project
